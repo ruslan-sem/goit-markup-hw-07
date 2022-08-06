@@ -94,10 +94,26 @@ img {
   padding-bottom: 94px;
 }
 
+/* cards */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+}
+.card-item {
+  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-gap)) / var(--card-item));
+}
+
 /* header */
 .header-container {
   display: flex;
   align-items: center;
+}
+.header {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--header-brd-cl);
 }
 .header .logo {
   margin-right: 93px;
@@ -110,6 +126,29 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+.menu {
+  color: var(--dark-txt-cl);
+}
+.menu-current,
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-txt-cl);
+}
+.menu-current {
+  position: relative;
+}
+.menu-current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-txt-cl);
 }
 .contact-list {
   display: flex;
@@ -143,37 +182,6 @@ img {
 }
 .logo-light {
   color: #ffffffff;
-}
-
-/* header */
-.header {
-  font-weight: 500;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid var(--header-brd-cl);
-}
-.menu {
-  color: var(--dark-txt-cl);
-}
-.menu-current,
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-txt-cl);
-}
-.menu-current {
-  position: relative;
-}
-.menu-current::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-txt-cl);
 }
 
 /* section hero */
@@ -235,7 +243,9 @@ img {
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--dark-txt-cl);
+  margin-bottom: 50px;
 }
+
 /* feature */
 .feature-list {
   --card-item: 4;
@@ -262,9 +272,6 @@ img {
 .about {
   padding-top: 0;
 }
-.about-title {
-  margin-bottom: 50px;
-}
 .about-card {
   position: relative;
 }
@@ -287,9 +294,6 @@ img {
 /* command */
 .command {
   background-color: var(--command-bg-cl);
-}
-.command-title {
-  margin-bottom: 50px;
 }
 .command-list {
   --card-item: 4;
@@ -340,9 +344,6 @@ img {
 }
 
 /* clients */
-.clients-title {
-  margin-bottom: 50px;
-}
 .clients-list {
   --card-item: 6;
 }
@@ -508,16 +509,6 @@ img {
 .portfolio-type {
   font-size: 16px;
   line-height: calc(30 / 16);
-}
-
-/* cards */
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--card-gap);
-}
-.card-item {
-  flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-gap)) / var(--card-item));
 }
 
 /* modal */
