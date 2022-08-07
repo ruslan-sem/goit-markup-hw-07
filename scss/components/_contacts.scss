@@ -1,0 +1,21 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--timeing);
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--accent-txt-cl);
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
