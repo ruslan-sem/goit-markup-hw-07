@@ -434,7 +434,7 @@ img {
   gap: 8px;
   margin-bottom: 50px;
 }
-.filter-btn {
+.filter-list__btn {
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -447,28 +447,28 @@ img {
   border-radius: 4px;
   transition: color var(--timeing), background-color var(--timeing), box-shadow var(--timeing);
 }
-.filter-btn-current,
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-list__btn--current,
+.filter-list__btn:hover,
+.filter-list__btn:focus {
   color: var(--light-txt-cl);
   background-color: var(--accent-txt-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-link {
+.portfolio__link {
   display: block;
   transition: box-shadow var(--timeing);
 }
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio-card {
+.portfolio__card {
   position: relative;
   overflow: hidden;
 }
-.portfolio-text {
+.portfolio__text {
   display: block;
   position: absolute;
   left: 0;
@@ -485,16 +485,16 @@ img {
   opacity: 0;
   transition: transform var(--timeing), opacity var(--timeing);
 }
-.portfolio-link:hover .portfolio-text,
-.portfolio-link:focus .portfolio-text {
+.portfolio__link:hover .portfolio__text,
+.portfolio__link:focus .portfolio__text {
   transform: translateY(-100%);
   opacity: 1;
 }
-.portfolio-content {
+.portfolio__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-.portfolio-header {
+.portfolio__header {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -502,7 +502,7 @@ img {
   color: var(--dark-txt-cl);
   margin-bottom: 4px;
 }
-.portfolio-type {
+.portfolio__type {
   font-size: 16px;
   line-height: calc(30 / 16);
 }
