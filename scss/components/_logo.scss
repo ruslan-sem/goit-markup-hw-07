@@ -4,10 +4,10 @@
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--accent-txt-cl);
-}
-.logo-dark {
-  color: #000000;
-}
-.logo-light {
-  color: #ffffffff;
+  &--dark {
+    color: #000000;
+  }
+  &--light {
+    color: #ffffffff;
+  }
 }
