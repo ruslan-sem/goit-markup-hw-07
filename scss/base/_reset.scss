@@ -24,10 +24,3 @@ img {
 .list {
   list-style: none;
 }
-.address {
-  font-style: inherit;
-  color: var(--light-txt-cl);
-  &__item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-}

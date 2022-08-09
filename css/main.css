@@ -42,6 +42,14 @@ body {
   overflow: hidden;
 }
 
+.address {
+  font-style: inherit;
+  color: var(--light-txt-cl);
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 h1,
 h2,
 h3,
@@ -71,14 +79,6 @@ img {
 
 .list {
   list-style: none;
-}
-
-.address {
-  font-style: inherit;
-  color: var(--light-txt-cl);
-}
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .container {
